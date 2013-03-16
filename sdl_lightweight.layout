@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="gfx/SDL_gfxPrimitives.c" open="0" top="0" tabpos="0">
+		<Cursor position="189653" topLine="7212" />
+	</File>
+	<File name="gfx/SDL_gfxPrimitives.h" open="0" top="0" tabpos="0">
+		<Cursor position="9842" topLine="198" />
+	</File>
+	<File name="json/jsoncpp.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3161" topLine="53" />
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="646" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

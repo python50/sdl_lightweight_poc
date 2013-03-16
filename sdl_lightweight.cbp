@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="sdl_lightweight" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/sdl_lightweight" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-Wpointer-sign" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/sdl_lightweight" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`sdl-config --cflags`" />
+			<Add directory="gfx" />
+			<Add directory="json" />
+		</Compiler>
+		<Linker>
+			<Add option="`sdl-config --libs`" />
+		</Linker>
+		<Unit filename="cb.bmp" />
+		<Unit filename="gfx/SDL_framerate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gfx/SDL_framerate.h" />
+		<Unit filename="gfx/SDL_gfxBlitFunc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gfx/SDL_gfxBlitFunc.h" />
+		<Unit filename="gfx/SDL_gfxPrimitives.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gfx/SDL_gfxPrimitives.h" />
+		<Unit filename="gfx/SDL_gfxPrimitives_font.h" />
+		<Unit filename="gfx/SDL_imageFilter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gfx/SDL_imageFilter.h" />
+		<Unit filename="gfx/SDL_rotozoom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gfx/SDL_rotozoom.h" />
+		<Unit filename="json/json.h" />
+		<Unit filename="json/jsoncpp.cpp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
