@@ -1,4 +1,6 @@
 #include "map_parser.h"
+#include <vector>
+#include "game_poly.h"
 
 void parse_meta(Json::Value root)
 {
@@ -26,7 +28,7 @@ void parse_layers(Json::Value root)
         {
             //report invalid layer
             std::cout << prefix << "Warning: invalid layer, `" << type
-            << "` type detected, only `objectgroup` is supported\n";
+                      << "` type detected, only `objectgroup` is supported\n";
             continue;
         }
 
@@ -57,10 +59,47 @@ void parse_object(int depth, Json::Value object)
 
     std::string name=object["name"].asString();
     std::string type=object["type"].asString();
+    int x=object["x"].asInt();
+    int y=object["y"].asInt();
+
     std::cout << prefix << "Processing object: name `" << name << "` : type `" << type << "`\n";
 
     if (type=="poly")
     {
+        Json::Value polygon=object.get("polygon", 0 );
+
+        std::vector<std::pair<int, int> > vrt;
+
+        if (polygon.isArray())
+        {
+            //its a polyon, or line
+
+            for ( int index = 0; index < polygon.size(); ++index )  // Iterates over the sequence elements.
+            {
+                std::pair<int, int> coord;
+                coord.first=polygon[index]["x"].asInt();
+                coord.second=polygon[index]["y"].asInt();
+                vrt.push_back(coord);
+            }
+        }
+        else
+        {
+            //if not a polygon, a square
+            std::pair<int, int> coord;
+            coord.first=0;
+            coord.second=0;
+            vrt.push_back(coord);
+
+            coord.first=object["width"].asInt();
+            coord.second=object["height"].asInt();
+            vrt.push_back(coord);
+        }
+
+        std::string image_name=object["properties"]["image"].asString();
+        base * object=new game_poly(x,y,vrt, get_surface(image_name));
+        meta::objects.push_back(object);
+
+
 
     }
 }

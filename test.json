@@ -9,7 +9,7 @@
                  "name":"floor",
                  "properties":
                     {
-
+                     "image":""
                     },
                  "rotation":0,
                  "type":"poly",
@@ -21,7 +21,7 @@
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
-         "width":10,
+         "width":30,
          "x":0,
          "y":0
         }, 
@@ -46,11 +46,11 @@
                          "y":-32
                         }, 
                         {
-                         "x":320,
+                         "x":960,
                          "y":-32
                         }, 
                         {
-                         "x":320,
+                         "x":960,
                          "y":-64
                         }, 
                         {
@@ -63,7 +63,7 @@
                         }],
                  "properties":
                     {
-
+                     "image":"metal"
                     },
                  "rotation":0,
                  "type":"poly",
@@ -77,11 +77,11 @@
                  "name":"wall2",
                  "polygon":[
                         {
-                         "x":0,
+                         "x":640,
                          "y":0
                         }, 
                         {
-                         "x":0,
+                         "x":640,
                          "y":288
                         }, 
                         {
@@ -101,24 +101,24 @@
                          "y":256
                         }, 
                         {
-                         "x":-64,
+                         "x":576,
                          "y":256
                         }, 
                         {
-                         "x":-32,
+                         "x":608,
                          "y":224
                         }, 
                         {
-                         "x":-32,
+                         "x":608,
                          "y":32
                         }, 
                         {
-                         "x":-32,
+                         "x":576,
                          "y":0
                         }],
                  "properties":
                     {
-
+                     "image":"metal"
                     },
                  "rotation":0,
                  "type":"poly",
@@ -126,11 +126,58 @@
                  "width":0,
                  "x":320,
                  "y":32
+                }, 
+                {
+                 "height":0,
+                 "name":"",
+                 "polygon":[
+                        {
+                         "x":0,
+                         "y":-32
+                        }, 
+                        {
+                         "x":64,
+                         "y":0
+                        }, 
+                        {
+                         "x":672,
+                         "y":0
+                        }, 
+                        {
+                         "x":736,
+                         "y":-32
+                        }, 
+                        {
+                         "x":736,
+                         "y":-96
+                        }, 
+                        {
+                         "x":672,
+                         "y":-128
+                        }, 
+                        {
+                         "x":64,
+                         "y":-128
+                        }, 
+                        {
+                         "x":0,
+                         "y":-96
+                        }],
+                 "properties":
+                    {
+                     "image":"metal"
+                    },
+                 "rotation":0,
+                 "type":"poly",
+                 "visible":true,
+                 "width":0,
+                 "x":128,
+                 "y":224
                 }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
-         "width":10,
+         "width":30,
          "x":0,
          "y":0
         }, 
@@ -139,23 +186,23 @@
          "name":"2",
          "objects":[
                 {
-                 "height":32,
+                 "height":128,
                  "name":"player",
                  "properties":
                     {
-
+                     "image":"metal"
                     },
                  "rotation":0,
                  "type":"poly",
                  "visible":true,
                  "width":32,
-                 "x":128,
-                 "y":128
+                 "x":32,
+                 "y":96
                 }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
-         "width":10,
+         "width":30,
          "x":0,
          "y":0
         }],
@@ -168,5 +215,5 @@
  "tilesets":[],
  "tilewidth":32,
  "version":1,
- "width":10
+ "width":30
 }
