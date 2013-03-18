@@ -230,7 +230,7 @@
 	<string.h>
 	"SDL_rotozoom.h"
 
-1363553316 source:/media/320gb/Files/sdl_lightweight/main.cpp
+1363553584 source:/media/320gb/Files/sdl_lightweight/main.cpp
 	<cstdlib>
 	<SDL/SDL.h>
 	<SDL.h>

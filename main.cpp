@@ -65,7 +65,6 @@ void update_objects()
 {
     for(unsigned int i=0; i < meta::objects.size(); i++)
     {
-        std::cout << i << " " << meta::objects.size() << "\n";
         meta::objects.at(i)->update();
         meta::objects.at(i)->draw();
     }
