@@ -70,6 +70,14 @@ void game_poly::check_move()
     std::cout << x << " " << y << " " << vx[0] << " " << vy[0] << "\n";
 }
 
+void game_poly::update_v()
+{/*
+    for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext())
+    {
+        ....
+    }*/
+}
+
 void game_poly::update()
 {
     check_move();

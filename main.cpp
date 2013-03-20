@@ -36,11 +36,12 @@ bool initalize()
     return 1;
 }
 
+
 void init_box2d()
 {
 	// Define the ground body.
 	b2BodyDef groundBodyDef;
-	groundBodyDef.position.Set(0.0f, -10.0f);
+	groundBodyDef.position.Set(30.0f, -40.0f);
 
 	// Call the body factory which allocates memory for the ground body
 	// from a pool and creates the ground box shape (also from a pool).
@@ -51,14 +52,17 @@ void init_box2d()
 	b2PolygonShape groundBox;
 
 	// The extents are the half-widths of the box.
-	groundBox.SetAsBox(5.0f, 1.0f);
+	groundBox.SetAsBox(20.0f, 1.0f, b2Vec2(0,0), .05f);
 
 	// Add the ground fixture to the ground body.
 	groundBody->CreateFixture(&groundBox, 0.0f);
 
 
-	game_poly * poly =new game_poly(0,0,b2poly_convert(&groundBox));
+	game_poly * poly =new game_poly(0,-100, b2poly_convert(&groundBox));
 	meta::objects.push_back(poly);
+
+poly->x=groundBody->GetPosition().x*10+5*10;
+poly->y=groundBody->GetPosition().y*-10+1*10;
 }
 
 void update_objects()
@@ -80,9 +84,55 @@ int main ( int argc, char** argv )
     add_surface("metal",load_surface("metal_texture.bmp"));
     SDL_Surface * metal=get_surface("metal");
 
+
+
+	b2BodyDef ballBodyDef;
+	ballBodyDef.type = b2_dynamicBody;
+	ballBodyDef.position.Set(45.0f, -4.0f);
+	b2Body* ballBody = meta::world.CreateBody(&ballBodyDef);
+
+	// Define the ground box shape.
+	b2PolygonShape ballBox;
+
+	// The extents are the half-widths of the box.
+	ballBox.SetAsBox(1.0f, 1.0f);
+
+	// Define the dynamic body fixture.
+	b2FixtureDef ballFixtureDef;
+	ballFixtureDef.shape = &ballBox;
+
+	// Set the box density to be non-zero, so it will be dynamic.
+	ballFixtureDef.density = 1.0f;
+
+	// Override the default friction.
+	ballFixtureDef.friction = 0.0f;
+
+	ballFixtureDef.restitution = 0.1f;
+
+	// Add the shape to the body.
+	ballBody->CreateFixture(&ballFixtureDef);
+
+	// Add the ground fixture to the ground body.
+	//ballBody->CreateFixture(&ballBox, 0.0f);
+
+
+	game_poly * poly =new game_poly(0,0,b2poly_convert(&ballBox));
+
+
+
+
+
+
+
+
+
+
+
+
+
     //load_map("test.json");
 
-    float32 timeStep = 1.0f / 60.0f;
+    float32 timeStep = 1.0f / 30.0f;
 	int32 velocityIterations = 6;
 	int32 positionIterations = 2;
 
@@ -122,7 +172,20 @@ int main ( int argc, char** argv )
 		// It is generally best to keep the time step and iterations fixed.
 		meta::world.Step(timeStep, velocityIterations, positionIterations);
 
-        update_objects();
+
+//delete poly;
+
+//poly =new game_poly(0,0,b2poly_convert(&ballBox));
+
+poly->x=ballBody->GetPosition().x*10+1*10;;
+poly->y=ballBody->GetPosition().y*-10+1*10;;
+
+std::cout << "POS _> " << poly->x << " " << poly->y << "\n";
+
+poly->update();
+poly->draw();
+
+        //update_objects();
 
         // DRAWING ENDS HERE
 

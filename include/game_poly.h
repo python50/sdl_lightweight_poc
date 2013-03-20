@@ -28,6 +28,7 @@ public:
     virtual ~game_poly();
 protected:
 private:
+    void update_v();
     void check_move();
     //old x,y : old view x,view y
     int ox,oy,ovx,ovy;

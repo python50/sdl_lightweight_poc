@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
+	<File name="Box2D/Dynamics/b2Fixture.h" open="0" top="0" tabpos="0">
+		<Cursor position="3739" topLine="131" />
+	</File>
 	<File name="gfx/SDL_gfxPrimitives.c" open="0" top="0" tabpos="0">
 		<Cursor position="144061" topLine="5535" />
 	</File>
@@ -10,25 +13,25 @@
 	<File name="include/base.h" open="0" top="0" tabpos="0">
 		<Cursor position="100" topLine="0" />
 	</File>
-	<File name="include/game_poly.h" open="0" top="0" tabpos="3">
-		<Cursor position="236" topLine="0" />
+	<File name="include/game_poly.h" open="1" top="0" tabpos="4">
+		<Cursor position="549" topLine="0" />
 	</File>
 	<File name="json/jsoncpp.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="3158" topLine="0" />
 	</File>
 	<File name="main.cpp" open="1" top="1" tabpos="1">
-		<Cursor position="778" topLine="30" />
+		<Cursor position="4039" topLine="91" />
 	</File>
 	<File name="map_parser.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="2668" topLine="48" />
 	</File>
 	<File name="meta.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="2116" topLine="73" />
+		<Cursor position="2509" topLine="71" />
 	</File>
 	<File name="meta.h" open="1" top="0" tabpos="2">
 		<Cursor position="850" topLine="0" />
 	</File>
-	<File name="src/game_poly.cpp" open="0" top="0" tabpos="4">
-		<Cursor position="667" topLine="0" />
+	<File name="src/game_poly.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="1735" topLine="36" />
 	</File>
 </CodeBlocks_layout_file>

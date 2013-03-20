@@ -100,7 +100,7 @@ void blit_screen(SDL_Surface * image, int x, int y)
     SDL_BlitSurface(image, 0, meta::screen, &rect);
 }
 
-const float b2_scaling_factor=32;
+const float b2_scaling_factor=10;
 std::vector<std::pair<int, int> > b2poly_convert(b2PolygonShape * shape)
 {
 	std::vector<std::pair<int, int> > v;
@@ -108,7 +108,7 @@ std::vector<std::pair<int, int> > b2poly_convert(b2PolygonShape * shape)
 	{
 	    std::pair<int, int> p;
 	    p.first=shape->GetVertex(i).x*b2_scaling_factor;
-	    p.second=shape->GetVertex(i).y*b2_scaling_factor;
+	    p.second=shape->GetVertex(i).y*-b2_scaling_factor;
 	    v.push_back(p);
 
 	    std::cout << "->" << p.first << " " << p.second << "\n";
