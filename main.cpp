@@ -65,9 +65,13 @@ meta::objects.push_back(new psrect_static(10, 240,10, 240));
 meta::objects.push_back(new psrect_static(630, 240, 10, 240));
 
 
-psrect_dynamic * ps2 = new psrect_dynamic(300,100,20,20);
-meta::objects.push_back(ps2);
-
+meta::objects.push_back(new psrect_dynamic(100,100,20,20));
+meta::objects.push_back(new psrect_dynamic(150,100,20,20));
+meta::objects.push_back(new psrect_dynamic(200,100,20,20));
+meta::objects.push_back(new psrect_dynamic(250,100,20,20));
+meta::objects.push_back(new psrect_dynamic(300,100,20,20));
+meta::objects.push_back(new psrect_dynamic(350,100,20,20));
+meta::objects.push_back(new psrect_dynamic(400,100,20,20));
 
 
     //load_map("test.json");

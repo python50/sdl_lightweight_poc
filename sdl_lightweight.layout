@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Box2D/Dynamics/b2Body.h" open="1" top="0" tabpos="7">
+	<File name="Box2D/Dynamics/b2Body.h" open="1" top="0" tabpos="6">
 		<Cursor position="20401" topLine="658" />
 	</File>
 	<File name="Box2D/Dynamics/b2Fixture.h" open="0" top="0" tabpos="0">
 		<Cursor position="3739" topLine="131" />
 	</File>
-	<File name="gfx/SDL_framerate.c" open="1" top="0" tabpos="8">
+	<File name="gfx/SDL_framerate.c" open="1" top="0" tabpos="7">
 		<Cursor position="0" topLine="21" />
 	</File>
-	<File name="gfx/SDL_framerate.h" open="1" top="0" tabpos="9">
+	<File name="gfx/SDL_framerate.h" open="1" top="0" tabpos="8">
 		<Cursor position="1788" topLine="42" />
 	</File>
 	<File name="gfx/SDL_gfxPrimitives.c" open="0" top="0" tabpos="7">
@@ -32,7 +32,7 @@
 		<Cursor position="3158" topLine="0" />
 	</File>
 	<File name="main.cpp" open="1" top="1" tabpos="1">
-		<Cursor position="840" topLine="32" />
+		<Cursor position="1922" topLine="32" />
 	</File>
 	<File name="map_parser.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="2668" topLine="48" />
@@ -46,7 +46,7 @@
 	<File name="src/game_poly.cpp" open="1" top="0" tabpos="4">
 		<Cursor position="619" topLine="18" />
 	</File>
-	<File name="src/psrect_dynamic.cpp" open="1" top="0" tabpos="6">
+	<File name="src/psrect_dynamic.cpp" open="1" top="0" tabpos="5">
 		<Cursor position="2691" topLine="99" />
 	</File>
 	<File name="src/psrect_static.cpp" open="1" top="0" tabpos="3">
