@@ -6,11 +6,15 @@
 #include <SDL.h>
 #endif
 
+#include "SDL_framerate.h"
 #include "SDL_gfxPrimitives.h"
 #include "meta.h"
 #include "game_poly.h"
 #include "map_parser.h"
 #include "Box2D.h"
+
+#include "psrect_static.h"
+#include "psrect_dynamic.h"
 
 bool initalize()
 {
@@ -36,35 +40,6 @@ bool initalize()
     return 1;
 }
 
-
-void init_box2d()
-{
-	// Define the ground body.
-	b2BodyDef groundBodyDef;
-	groundBodyDef.position.Set(30.0f, -40.0f);
-
-	// Call the body factory which allocates memory for the ground body
-	// from a pool and creates the ground box shape (also from a pool).
-	// The body is also added to the world.
-	b2Body* groundBody = meta::world.CreateBody(&groundBodyDef);
-
-	// Define the ground box shape.
-	b2PolygonShape groundBox;
-
-	// The extents are the half-widths of the box.
-	groundBox.SetAsBox(20.0f, 1.0f, b2Vec2(0,0), .05f);
-
-	// Add the ground fixture to the ground body.
-	groundBody->CreateFixture(&groundBox, 0.0f);
-
-
-	game_poly * poly =new game_poly(0,-100, b2poly_convert(&groundBox));
-	meta::objects.push_back(poly);
-
-poly->x=groundBody->GetPosition().x*10+5*10;
-poly->y=groundBody->GetPosition().y*-10+1*10;
-}
-
 void update_objects()
 {
     for(unsigned int i=0; i < meta::objects.size(); i++)
@@ -77,56 +52,21 @@ void update_objects()
 int main ( int argc, char** argv )
 {
     initalize();
-    init_box2d();
 
     add_surface("cb",load_surface("cb.bmp"));
     SDL_Surface * bmp=get_surface("cb");
     add_surface("metal",load_surface("metal_texture.bmp"));
     SDL_Surface * metal=get_surface("metal");
 
+meta::objects.push_back(new psrect_static(320, 460, 320, 20));
+meta::objects.push_back(new psrect_static(320, 20, 320, 20));
+
+meta::objects.push_back(new psrect_static(10, 240,10, 240));
+meta::objects.push_back(new psrect_static(630, 240, 10, 240));
 
 
-	b2BodyDef ballBodyDef;
-	ballBodyDef.type = b2_dynamicBody;
-	ballBodyDef.position.Set(45.0f, -4.0f);
-	b2Body* ballBody = meta::world.CreateBody(&ballBodyDef);
-
-	// Define the ground box shape.
-	b2PolygonShape ballBox;
-
-	// The extents are the half-widths of the box.
-	ballBox.SetAsBox(1.0f, 1.0f);
-
-	// Define the dynamic body fixture.
-	b2FixtureDef ballFixtureDef;
-	ballFixtureDef.shape = &ballBox;
-
-	// Set the box density to be non-zero, so it will be dynamic.
-	ballFixtureDef.density = 1.0f;
-
-	// Override the default friction.
-	ballFixtureDef.friction = 0.0f;
-
-	ballFixtureDef.restitution = 0.1f;
-
-	// Add the shape to the body.
-	ballBody->CreateFixture(&ballFixtureDef);
-
-	// Add the ground fixture to the ground body.
-	//ballBody->CreateFixture(&ballBox, 0.0f);
-
-
-	game_poly * poly =new game_poly(0,0,b2poly_convert(&ballBox));
-
-
-
-
-
-
-
-
-
-
+psrect_dynamic * ps2 = new psrect_dynamic(300,100,20,20);
+meta::objects.push_back(ps2);
 
 
 
@@ -136,11 +76,16 @@ int main ( int argc, char** argv )
 	int32 velocityIterations = 6;
 	int32 positionIterations = 2;
 
+    FPSmanager manager;
+    SDL_initFramerate(&manager);
+    SDL_setFramerate(&manager, 30);
 
     // program main loop
     bool done = false;
     while (!done)
     {
+        SDL_framerateDelay(&manager);
+
         // message processing loop
         SDL_Event event;
         while (SDL_PollEvent(&event))
@@ -159,33 +104,22 @@ int main ( int argc, char** argv )
                 if (event.key.keysym.sym == SDLK_ESCAPE)
                     done = true;
                 break;
+
+
             } // end switch
         } // end of message processing
 
         // DRAWING STARTS HERE
 
         // clear screen
-        SDL_FillRect(meta::screen, 0, SDL_MapRGB(meta::screen->format, 0x55, 0x55, 0x55));
-
+        //SDL_FillRect(meta::screen, 0, SDL_MapRGB(meta::screen->format, 0x11, 0x33, 0x55 ));
+SDL_FillRect(meta::screen, 0, SDL_MapRGB(meta::screen->format, 0xFF/2, 0xFF/2, 0x88/2 ));
 
 		// Instruct the world to perform a single step of simulation.
 		// It is generally best to keep the time step and iterations fixed.
 		meta::world.Step(timeStep, velocityIterations, positionIterations);
 
-
-//delete poly;
-
-//poly =new game_poly(0,0,b2poly_convert(&ballBox));
-
-poly->x=ballBody->GetPosition().x*10+1*10;;
-poly->y=ballBody->GetPosition().y*-10+1*10;;
-
-std::cout << "POS _> " << poly->x << " " << poly->y << "\n";
-
-poly->update();
-poly->draw();
-
-        //update_objects();
+        update_objects();
 
         // DRAWING ENDS HERE
 

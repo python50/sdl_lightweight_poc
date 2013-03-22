@@ -67,7 +67,6 @@ void game_poly::check_move()
     ovx=meta::view_x;
     ovy=meta::view_y;
 
-    std::cout << x << " " << y << " " << vx[0] << " " << vy[0] << "\n";
 }
 
 void game_poly::update_v()
@@ -94,7 +93,7 @@ void game_poly::draw()
     else
         texturedPolygon(meta::screen, vx, vy, size, texture, origvx[0]+x-meta::view_x, origvy[0]+y+meta::view_y);
 
-
+    pixelColor(meta::screen, x, y, 0x000000FF);
 }
 
 game_poly::~game_poly()

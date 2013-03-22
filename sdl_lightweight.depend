@@ -230,15 +230,18 @@
 	<string.h>
 	"SDL_rotozoom.h"
 
-1363690089 source:/media/320gb/Files/sdl_lightweight/main.cpp
+1363911568 source:/media/320gb/Files/sdl_lightweight/main.cpp
 	<cstdlib>
 	<SDL/SDL.h>
 	<SDL.h>
+	"SDL_framerate.h"
 	"SDL_gfxPrimitives.h"
 	"meta.h"
 	"game_poly.h"
 	"map_parser.h"
 	"Box2D.h"
+	"psrect_static.h"
+	"psrect_dynamic.h"
 
 1363550423 source:/media/320gb/Files/sdl_lightweight/json/jsoncpp.cpp
 	<json.h>
@@ -326,7 +329,7 @@
 1363550424 source:/media/320gb/Files/sdl_lightweight/src/base.cpp
 	"base.h"
 
-1363814078 source:/media/320gb/Files/sdl_lightweight/src/game_poly.cpp
+1363904890 source:/media/320gb/Files/sdl_lightweight/src/game_poly.cpp
 	"game_poly.h"
 	"meta.h"
 
@@ -808,4 +811,37 @@
 
 1298355720 /media/320gb/Files/sdl_lightweight//Box2D/Rope/b2Rope.h
 	<Box2D/Common/b2Math.h>
+
+1363903379 source:/media/320gb/Files/sdl_lightweight/src/psrect.cpp
+	"psrect.h"
+	<vector>
+	"meta.h"
+
+1363903413 /media/320gb/Files/sdl_lightweight/include/psrect.h
+	"base.h"
+	"SDL.h"
+	"SDL_gfxPrimitives.h"
+	"Box2D.h"
+
+1363906773 source:/media/320gb/Files/sdl_lightweight/src/psrect_static.cpp
+	"psrect_static.h"
+	<vector>
+	"meta.h"
+
+1363904183 /media/320gb/Files/sdl_lightweight/include/psrect_static.h
+	"base.h"
+	"SDL.h"
+	"SDL_gfxPrimitives.h"
+	"Box2D.h"
+
+1363906059 /media/320gb/Files/sdl_lightweight/include/psrect_dynamic.h
+	"base.h"
+	"SDL.h"
+	"SDL_gfxPrimitives.h"
+	"Box2D.h"
+
+1363911496 source:/media/320gb/Files/sdl_lightweight/src/psrect_dynamic.cpp
+	"psrect_dynamic.h"
+	<vector>
+	"meta.h"
 

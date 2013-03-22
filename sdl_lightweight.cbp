@@ -155,6 +155,8 @@
 		<Unit filename="gfx/SDL_rotozoom.h" />
 		<Unit filename="include/base.h" />
 		<Unit filename="include/game_poly.h" />
+		<Unit filename="include/psrect_dynamic.h" />
+		<Unit filename="include/psrect_static.h" />
 		<Unit filename="json/json.h" />
 		<Unit filename="json/jsoncpp.cpp" />
 		<Unit filename="main.cpp" />
@@ -164,6 +166,8 @@
 		<Unit filename="meta.h" />
 		<Unit filename="src/base.cpp" />
 		<Unit filename="src/game_poly.cpp" />
+		<Unit filename="src/psrect_dynamic.cpp" />
+		<Unit filename="src/psrect_static.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
