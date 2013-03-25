@@ -1,11 +1,11 @@
-#ifndef psrect_dynamic_H
-#define psrect_dynamic_H
+#ifndef rocket_H
+#define rocket_H
 #include "base.h"
 #include "SDL.h"
 #include "SDL_gfxPrimitives.h"
 #include "Box2D.h"
 
-class psrect_dynamic : public base
+class rocket: public base
 {
     public:
     int x;
@@ -18,24 +18,24 @@ class psrect_dynamic : public base
     Sint16 * origvy;
     int size;
 
-    int life;
-
     b2Body* body;
 
-    psrect_dynamic(int x, int y, float width, float height);
+    rocket(int x, int y, float width=10, float height=10);
 
     void update();
     void draw();
 
-    virtual ~psrect_dynamic();
+    virtual ~rocket();
 protected:
 private:
     void create_body(float w, float h, float a=0);
     void update_v();
+    void dampen_xy();
     void check_move();
 
     //old x,y : old view x,view y
     int ox,oy,ovx,ovy;
+    bool started;
 };
 
-#endif // psrect_dynamic_H
+#endif // rocket_H

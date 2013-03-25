@@ -230,7 +230,7 @@
 	<string.h>
 	"SDL_rotozoom.h"
 
-1363911568 source:/media/320gb/Files/sdl_lightweight/main.cpp
+1364174512 source:/media/320gb/Files/sdl_lightweight/main.cpp
 	<cstdlib>
 	<SDL/SDL.h>
 	<SDL.h>
@@ -242,6 +242,7 @@
 	"Box2D.h"
 	"psrect_static.h"
 	"psrect_dynamic.h"
+	"rocket.h"
 
 1363550423 source:/media/320gb/Files/sdl_lightweight/json/jsoncpp.cpp
 	<json.h>
@@ -312,16 +313,17 @@
 	<vector>
 	"game_poly.h"
 
-1363553317 /media/320gb/Files/sdl_lightweight/meta.h
+1364162500 /media/320gb/Files/sdl_lightweight/meta.h
 	"Box2D.h"
 	"SDL.h"
 	"base.h"
 	<vector>
 	<utility>
 
-1363689855 source:/media/320gb/Files/sdl_lightweight/meta.cpp
+1364163853 source:/media/320gb/Files/sdl_lightweight/meta.cpp
 	"meta.h"
 	"Box2D.h"
+	"SDL_image.h"
 
 1363529050 /media/320gb/Files/sdl_lightweight/include/base.h
 	<iostream>
@@ -339,7 +341,7 @@
 	"base.h"
 	"SDL_gfxPrimitives.h"
 
-1363553317 /media/320gb/Files/sdl_lightweight//meta.h
+1364162500 /media/320gb/Files/sdl_lightweight//meta.h
 	"Box2D.h"
 	"SDL.h"
 	"base.h"
@@ -823,7 +825,7 @@
 	"SDL_gfxPrimitives.h"
 	"Box2D.h"
 
-1363906773 source:/media/320gb/Files/sdl_lightweight/src/psrect_static.cpp
+1364174347 source:/media/320gb/Files/sdl_lightweight/src/psrect_static.cpp
 	"psrect_static.h"
 	<vector>
 	"meta.h"
@@ -834,14 +836,32 @@
 	"SDL_gfxPrimitives.h"
 	"Box2D.h"
 
-1363906059 /media/320gb/Files/sdl_lightweight/include/psrect_dynamic.h
+1364158032 /media/320gb/Files/sdl_lightweight/include/psrect_dynamic.h
 	"base.h"
 	"SDL.h"
 	"SDL_gfxPrimitives.h"
 	"Box2D.h"
 
-1363911496 source:/media/320gb/Files/sdl_lightweight/src/psrect_dynamic.cpp
+1364174347 source:/media/320gb/Files/sdl_lightweight/src/psrect_dynamic.cpp
 	"psrect_dynamic.h"
 	<vector>
 	"meta.h"
+
+1364153645 /media/320gb/Files/sdl_lightweight/include/rocket.h
+	"base.h"
+	"SDL.h"
+	"SDL_gfxPrimitives.h"
+	"Box2D.h"
+
+1364174347 source:/media/320gb/Files/sdl_lightweight/src/rocket.cpp
+	"rocket.h"
+	"psrect_dynamic.h"
+	<vector>
+	"meta.h"
+
+1325206101 /usr/include/SDL/SDL_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
 

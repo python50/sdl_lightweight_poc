@@ -34,7 +34,9 @@ psrect_dynamic::psrect_dynamic(int xx, int yy, float ww, float hh)
         vy[i]=v.at(i).second;
     }
 
-    create_body(w,h,.4);
+    create_body(w,h);
+    //body->ApplyTorque(rand()%50);
+    life=600+rand()%300;
 }
 
 void psrect_dynamic::create_body(float w, float h, float a)
@@ -98,19 +100,16 @@ void psrect_dynamic::update_v()
         return;
     }
 
-    //x=body->GetPosition().x*10;
-    //y=body->GetPosition().y*-10;
+    x=body->GetPosition().x*10;
+    y=body->GetPosition().y*-10;
 
     for(int i=0; i < size and i < s->GetVertexCount(); i++)
     {
         vx[i]=body->GetWorldPoint(s->GetVertex(i)).x*10;
         vy[i]=body->GetWorldPoint(s->GetVertex(i)).y*-10;
 
-
-
-
-        //vx[i]=vx[i]+x-meta::view_x;
-        //vy[i]=vy[i]+y-meta::view_y;
+        vx[i]=vx[i]-meta::view_x;
+        vy[i]=vy[i]-meta::view_y;
     }
 }
 
@@ -119,28 +118,27 @@ void psrect_dynamic::update()
     update_v();
     //check_move();
 
-    static char c=0;
-    c++;
-    if (c==0)
+    life--;
+    if (!life)
     {
-            b2Vec2 force(-100,100);//= );
-            body->ApplyLinearImpulse(force, body->GetWorldVector( b2Vec2(0,-1)));
-            std::cout << "FORCE !! " << force.x << " " << force.y << "\n";
+        remove_object(this);
+        return;
     }
-
-
 }
 
 void psrect_dynamic::draw()
 {
-    filledPolygonRGBA(meta::screen, vx, vy, size, 0xFF,0x88,0xFF,0xFF);
+    filledPolygonRGBA(meta::screen, vx, vy, size, 0xBB,0x55,0x00,0xFF);
 
     pixelColor(meta::screen, x, y, 0x000000FF);
+
+    //stringRGBA(meta::screen, x, y, "dbox", 0X00, 0X00, 0X00, 0X88);
 }
 
 
 psrect_dynamic::~psrect_dynamic()
 {
+    meta::world.DestroyBody(body);
     //dtor
     delete [] vx;
     delete [] vy;

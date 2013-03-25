@@ -109,14 +109,16 @@ void psrect_static::update()
 
 void psrect_static::draw()
 {
-    filledPolygonRGBA(meta::screen, vx, vy, size, 0x88,0xFF,0xFF,0xFF);
+    filledPolygonRGBA(meta::screen, vx, vy, size, 0x00,0x88,0x88,0xFF);
 
     pixelColor(meta::screen, x, y, 0x000000FF);
+    //stringRGBA(meta::screen, x, y, "sbox", 0X00, 0X00, 0X00, 0X88);
 }
 
 
 psrect_static::~psrect_static()
 {
+    meta::world.DestroyBody(body);
     //dtor
     delete [] vx;
     delete [] vy;

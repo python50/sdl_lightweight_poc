@@ -29,6 +29,7 @@
 			</Target>
 		</Build>
 		<Compiler>
+			<Add option="-std=c++0x" />
 			<Add option="-Wall" />
 			<Add option="`sdl-config --cflags`" />
 			<Add directory="gfx" />
@@ -39,6 +40,7 @@
 		</Compiler>
 		<Linker>
 			<Add option="`sdl-config --libs`" />
+			<Add option="-lSDL_image" />
 		</Linker>
 		<Unit filename="Box2D/Box2D.h" />
 		<Unit filename="Box2D/Collision/Shapes/b2ChainShape.cpp" />
@@ -157,6 +159,7 @@
 		<Unit filename="include/game_poly.h" />
 		<Unit filename="include/psrect_dynamic.h" />
 		<Unit filename="include/psrect_static.h" />
+		<Unit filename="include/rocket.h" />
 		<Unit filename="json/json.h" />
 		<Unit filename="json/jsoncpp.cpp" />
 		<Unit filename="main.cpp" />
@@ -168,6 +171,7 @@
 		<Unit filename="src/game_poly.cpp" />
 		<Unit filename="src/psrect_dynamic.cpp" />
 		<Unit filename="src/psrect_static.cpp" />
+		<Unit filename="src/rocket.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

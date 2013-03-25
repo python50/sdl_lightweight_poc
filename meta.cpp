@@ -1,5 +1,6 @@
 #include "meta.h"
 #include "Box2D.h"
+#include "SDL_image.h"
 
 namespace meta
 {
@@ -10,17 +11,17 @@ int view_y=0;
 int map_width=0;
 int map_height=0;
 SDL_Surface * screen=0;
-b2Vec2 gravity(0.0f, -10.0f);
+b2Vec2 gravity(0.0f, -15.0f);
 b2World world(gravity);
 std::vector<std::pair<std::string , SDL_Surface *> > surfaces;
 std::vector<base *> objects;
 }
 
-SDL_Surface * load_surface(std::string filename)
+SDL_Surface * load_surface(std::string filename, char mode)
 {
     const char * prefix="load_surface(): ";
 
-    SDL_Surface * data=SDL_LoadBMP(filename.c_str());
+    SDL_Surface * data=IMG_Load(filename.c_str());
 
     if (data==0)
     {
@@ -28,7 +29,15 @@ SDL_Surface * load_surface(std::string filename)
         return 0;
     }
 
-    return data;
+    //if (mode==1)
+    //{
+            long colorkey = SDL_MapRGB(meta::screen->format, 0, 0, 0);
+            SDL_SetColorKey(data, SDL_SRCCOLORKEY | SDL_RLEACCEL, colorkey);
+    //}
+
+
+
+    return SDL_DisplayFormat(data);
 }
 
 void add_surface(std::string id, SDL_Surface * surface)
@@ -114,4 +123,65 @@ std::vector<std::pair<int, int> > b2poly_convert(b2PolygonShape * shape)
 	    std::cout << "->" << p.first << " " << p.second << "\n";
 	}
 	return v;
+}
+
+
+#define base 10
+
+char * uitoa(unsigned long val, char * buf)
+{
+	unsigned	long	v;
+	char		c;
+
+	v = val;
+	do {
+		v /= base;
+		buf++;
+	} while(v != 0);
+	*buf-- = 0;
+	do {
+		c = val % base;
+		val /= base;
+		if(c >= 10)
+			c += 'A'-'0'-10;
+		c += '0';
+		*buf-- = c;
+	} while(val != 0);
+	return buf;
+}
+
+
+char * itoa(long val, char * buf)
+{
+	char *	cp = buf;
+
+	if(val < 0) {
+		*buf++ = '-';
+		val = -val;
+	}
+
+	uitoa(val, buf);
+	return cp;
+}
+
+
+bool remove_object(void * ptr)
+{
+    for(unsigned int i=0; i < meta::objects.size(); i+=1)
+    {
+        if (meta::objects.size()==0)
+            break;
+
+        if (meta::objects.at(i)==NULL)
+            continue;
+
+        if ((void *)meta::objects.at(i)==ptr)
+        {
+            delete meta::objects.at(i);
+            meta::objects.erase(meta::objects.begin()+i);
+            return 1;
+        }
+    }
+
+    return 0;
 }

@@ -25,7 +25,7 @@ extern std::vector<std::pair<std::string , SDL_Surface *> > surfaces;
 extern std::vector<base *> objects;
 }
 
-SDL_Surface * load_surface(std::string filename);
+SDL_Surface * load_surface(std::string filename, char mode);
 void add_surface(std::string id, SDL_Surface * surface);
 SDL_Surface * get_surface(std::string id);
 
@@ -34,7 +34,8 @@ void blit_game(SDL_Surface * image, int x, int y);
 void blit_screen(SDL_Surface * image, int x, int y);
 
 std::vector<std::pair<int, int> > b2poly_convert(b2PolygonShape * shape);
-
+char * itoa(long val, char * buf);
+bool remove_object(void * ptr);
 
 
 #endif // META_H_INCLUDED

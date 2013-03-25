@@ -15,9 +15,11 @@
 
 #include "psrect_static.h"
 #include "psrect_dynamic.h"
+#include "rocket.h"
 
 bool initalize()
 {
+    srand(time(0));
     // initialize SDL video
     if ( SDL_Init( SDL_INIT_VIDEO ) < 0 )
     {
@@ -31,7 +33,7 @@ bool initalize()
     meta::screen_width=640;
     meta::screen_height=480;
     // create a new window
-    meta::screen  = SDL_SetVideoMode(640, 480, 16, SDL_HWSURFACE | SDL_DOUBLEBUF);
+    meta::screen  = SDL_SetVideoMode(640, 480, 16, SDL_HWSURFACE | SDL_DOUBLEBUF | SDL_FULLSCREEN );
     if ( !meta::screen )
     {
         printf("Unable to set 640x480 video: %s\n", SDL_GetError());
@@ -49,30 +51,93 @@ void update_objects()
     }
 }
 
+void draw_tile(SDL_Surface * image, int x, int y, float scale=1)
+{
+    int w=image->w;
+    int h=image->h;
+
+    int viewx=scale*meta::view_x;
+    int viewy=scale*meta::view_y;
+
+    SDL_Rect rect;
+    rect.x=x-(viewx%w);
+    rect.y=y-(viewy%h);
+    rect.w=image->w;
+    rect.h=image->h;
+
+    SDL_BlitSurface(image, 0, meta::screen, &rect);
+}
+
+void draw_100()
+{
+    SDL_Surface * image=get_surface("spaceb");
+    int w=image->w;
+    int h=image->h;
+    for(int i=0;i<(480/h)+3;i++)
+    {
+        for(int j=0;j<(640/w)+3;j++)
+        {
+            draw_tile(image, j*w-w, i*h-h, .125);
+        }
+    }
+}
+
+void draw_80()
+{
+    SDL_Surface * image=get_surface("spacem");
+    int w=image->w;
+    int h=image->h;
+    for(int i=0;i<(480/h)+3;i++)
+    {
+        for(int j=0;j<(640/w)+3;j++)
+        {
+            draw_tile(image, j*w-w-4, i*h-h+34, .25);
+        }
+    }
+}
+
+void draw_60()
+{
+    SDL_Surface * image=get_surface("spacef");
+    int w=image->w;
+    int h=image->h;
+    for(int i=0;i<(480/h)+3;i++)
+    {
+        for(int j=0;j<(640/w)+3;j++)
+        {
+            draw_tile(image, j*w-w+15, i*h-h+21, .5);
+        }
+    }
+}
+
+void draw_background()
+{
+    draw_100();
+    draw_80();
+    draw_60();
+}
+
 int main ( int argc, char** argv )
 {
     initalize();
 
-    add_surface("cb",load_surface("cb.bmp"));
+    add_surface("spaceb", load_surface("100.png",1)   );
+    add_surface("spacem", load_surface("80.png",1)   );
+    add_surface("spacef", load_surface("60.png",1)   );
+
+    add_surface("cb",load_surface("cb.bmp",1));
     SDL_Surface * bmp=get_surface("cb");
-    add_surface("metal",load_surface("metal_texture.bmp"));
+    add_surface("metal",load_surface("metal_texture.bmp",0));
     SDL_Surface * metal=get_surface("metal");
 
-meta::objects.push_back(new psrect_static(320, 460, 320, 20));
-meta::objects.push_back(new psrect_static(320, 20, 320, 20));
+for(int i=-2;i < 20+2;i++)
+    meta::objects.push_back(new psrect_static(200*i, 200, 200, 200));
+//meta::objects.push_back(new psrect_static(320, 20, 320, 20));
 
-meta::objects.push_back(new psrect_static(10, 240,10, 240));
-meta::objects.push_back(new psrect_static(630, 240, 10, 240));
+//meta::objects.push_back(new psrect_static(0, -400,1, 1000));
+//meta::objects.push_back(new psrect_static(1000, -400, 1, 1000));
 
-
-meta::objects.push_back(new psrect_dynamic(100,100,20,20));
-meta::objects.push_back(new psrect_dynamic(150,100,20,20));
-meta::objects.push_back(new psrect_dynamic(200,100,20,20));
-meta::objects.push_back(new psrect_dynamic(250,100,20,20));
-meta::objects.push_back(new psrect_dynamic(300,100,20,20));
-meta::objects.push_back(new psrect_dynamic(350,100,20,20));
-meta::objects.push_back(new psrect_dynamic(400,100,20,20));
-
+meta::objects.push_back(new rocket(2000,-100, 50,70/3));
 
     //load_map("test.json");
 
@@ -114,10 +179,11 @@ meta::objects.push_back(new psrect_dynamic(400,100,20,20));
         } // end of message processing
 
         // DRAWING STARTS HERE
-
         // clear screen
-        //SDL_FillRect(meta::screen, 0, SDL_MapRGB(meta::screen->format, 0x11, 0x33, 0x55 ));
-SDL_FillRect(meta::screen, 0, SDL_MapRGB(meta::screen->format, 0xFF/2, 0xFF/2, 0x88/2 ));
+        SDL_FillRect(meta::screen, 0, SDL_MapRGB(meta::screen->format, 0, 0, 0 ));
+        //SDL_FillRect(meta::screen, 0, SDL_MapRGB(meta::screen->format, 0xFF/2, 0xFF/2, 0x88/2 ));
+
+        draw_background();
 
 		// Instruct the world to perform a single step of simulation.
 		// It is generally best to keep the time step and iterations fixed.
