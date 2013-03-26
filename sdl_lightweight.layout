@@ -41,27 +41,27 @@
 		<Cursor position="3158" topLine="0" />
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="3039" topLine="113" />
+		<Cursor position="741" topLine="147" />
 	</File>
 	<File name="map_parser.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="2668" topLine="48" />
 	</File>
 	<File name="meta.cpp" open="1" top="0" tabpos="6">
-		<Cursor position="229" topLine="0" />
+		<Cursor position="4112" topLine="160" />
 	</File>
 	<File name="meta.h" open="1" top="0" tabpos="7">
-		<Cursor position="969" topLine="0" />
+		<Cursor position="1135" topLine="0" />
 	</File>
 	<File name="src/game_poly.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="619" topLine="18" />
 	</File>
 	<File name="src/psrect_dynamic.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="2914" topLine="100" />
+		<Cursor position="2751" topLine="94" />
 	</File>
 	<File name="src/psrect_static.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="2623" topLine="79" />
+		<Cursor position="2416" topLine="74" />
 	</File>
 	<File name="src/rocket.cpp" open="1" top="1" tabpos="1">
-		<Cursor position="1457" topLine="162" />
+		<Cursor position="2895" topLine="16" />
 	</File>
 </CodeBlocks_layout_file>

@@ -23,6 +23,10 @@ extern b2World world;
 extern std::vector<std::pair<std::string , SDL_Surface *> > surfaces;
 // vector	-> base*
 extern std::vector<base *> objects;
+
+extern char background_red;
+extern char background_green;
+extern char background_blue;
 }
 
 SDL_Surface * load_surface(std::string filename, char mode);
@@ -37,5 +41,7 @@ std::vector<std::pair<int, int> > b2poly_convert(b2PolygonShape * shape);
 char * itoa(long val, char * buf);
 bool remove_object(void * ptr);
 
+
+void set_background(int red, int green, int blue);
 
 #endif // META_H_INCLUDED

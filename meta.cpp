@@ -15,6 +15,9 @@ b2Vec2 gravity(0.0f, -15.0f);
 b2World world(gravity);
 std::vector<std::pair<std::string , SDL_Surface *> > surfaces;
 std::vector<base *> objects;
+char background_red=0;
+char background_green=0;
+char background_blue=0;
 }
 
 SDL_Surface * load_surface(std::string filename, char mode)
@@ -184,4 +187,22 @@ bool remove_object(void * ptr)
     }
 
     return 0;
+}
+
+char limit_char(int x)
+{
+    if (x>=0xFF)
+        return 0xFF;
+    else if (x<=0)
+        return 0;
+    else
+        return x;
+}
+
+void set_background(int red, int green, int blue)
+{
+
+    meta::background_red=limit_char(red);
+    meta::background_green=limit_char(green);
+    meta::background_blue=limit_char(blue);
 }

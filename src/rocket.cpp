@@ -154,10 +154,10 @@ void rocket::update()
 
     if (!t and started)
     {
-        char j=rand()%15;
+        char j=rand()%10;
         for(int i=0;i < j;i++)
         {
-            char size= rand()%20+1;
+            char size= rand()%20+3;
             meta::objects.push_back(new psrect_dynamic(x-400+rand()%800, y-1000+rand()%500, size, size));
         }
 
@@ -178,7 +178,7 @@ void rocket::update()
         float32 speed = velocity.Normalize(); // Normalize returns the length, and set's the length to 1.
 
         if(speed>7.4)
-            body->SetLinearVelocity(.97 * speed * velocity);
+            body->SetLinearVelocity(.99 * speed * velocity);
     }
 
     if ( keystate[SDLK_LEFT] )
@@ -195,14 +195,31 @@ void rocket::update()
     meta::view_x=x-320;
     meta::view_y=y-240;
 
+    int red=0;
+    int green=0;
+    int blue=0;
 
+    if (-y < 3000)
+    {
+        red=    0x100 + round(y*.1276);
+        green=  0x110 + round(y*.1255);
+        blue=   0x120 + round(y*.1234);
+        std::cout << red << " " << blue << "\n";
+    }
+    else if (-y < 6000)
+    {
+        red=    -.000056888*y*y-.512*y-1024;
+        green=  0;
+        blue=   0;
+        std::cout << red << " " << blue << "\n";
+    }
+
+    set_background(red, green, blue);
 }
 
 void rocket::draw()
 {
     filledPolygonRGBA(meta::screen, vx, vy, size, 0xFF,0xDD,0x88,0xFF);
-
-    pixelColor(meta::screen, x, y, 0x000000FF);
 
 
     float ang=body->GetAngle();

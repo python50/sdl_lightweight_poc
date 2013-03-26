@@ -33,7 +33,7 @@ bool initalize()
     meta::screen_width=640;
     meta::screen_height=480;
     // create a new window
-    meta::screen  = SDL_SetVideoMode(640, 480, 16, SDL_HWSURFACE | SDL_DOUBLEBUF | SDL_FULLSCREEN );
+    meta::screen  = SDL_SetVideoMode(640, 480, 16, SDL_HWSURFACE | SDL_DOUBLEBUF );
     if ( !meta::screen )
     {
         printf("Unable to set 640x480 video: %s\n", SDL_GetError());
@@ -121,9 +121,9 @@ int main ( int argc, char** argv )
 {
     initalize();
 
-    add_surface("spaceb", load_surface("100.png",1)   );
-    add_surface("spacem", load_surface("80.png",1)   );
-    add_surface("spacef", load_surface("60.png",1)   );
+    add_surface("spaceb", load_surface("slight.png",1)   );
+    add_surface("spacem", load_surface("slight.png",1)   );
+    add_surface("spacef", load_surface("slight.png",1)   );
 
     add_surface("cb",load_surface("cb.bmp",1));
     SDL_Surface * bmp=get_surface("cb");
@@ -180,8 +180,8 @@ meta::objects.push_back(new rocket(2000,-100, 50,70/3));
 
         // DRAWING STARTS HERE
         // clear screen
-        SDL_FillRect(meta::screen, 0, SDL_MapRGB(meta::screen->format, 0, 0, 0 ));
-        //SDL_FillRect(meta::screen, 0, SDL_MapRGB(meta::screen->format, 0xFF/2, 0xFF/2, 0x88/2 ));
+        //SDL_FillRect(meta::screen, 0, SDL_MapRGB(meta::screen->format, 0, 0, 0 ));
+        SDL_FillRect(meta::screen, 0, SDL_MapRGB(meta::screen->format, meta::background_red , meta::background_green, meta::background_blue ));
 
         draw_background();
 

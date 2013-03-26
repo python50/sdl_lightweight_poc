@@ -130,9 +130,6 @@ void psrect_dynamic::draw()
 {
     filledPolygonRGBA(meta::screen, vx, vy, size, 0xBB,0x55,0x00,0xFF);
 
-    pixelColor(meta::screen, x, y, 0x000000FF);
-
-    //stringRGBA(meta::screen, x, y, "dbox", 0X00, 0X00, 0X00, 0X88);
 }
 
 

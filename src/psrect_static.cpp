@@ -109,10 +109,7 @@ void psrect_static::update()
 
 void psrect_static::draw()
 {
-    filledPolygonRGBA(meta::screen, vx, vy, size, 0x00,0x88,0x88,0xFF);
-
-    pixelColor(meta::screen, x, y, 0x000000FF);
-    //stringRGBA(meta::screen, x, y, "sbox", 0X00, 0X00, 0X00, 0X88);
+    filledPolygonRGBA(meta::screen, vx, vy, size, 0x00,0x44,0x00,0xFF);
 }
 
 
