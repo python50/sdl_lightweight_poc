@@ -44,9 +44,18 @@ bool initalize()
 
 void update_objects()
 {
+
     for(unsigned int i=0; i < meta::objects.size(); i++)
     {
+        //std::cout << i << " OBJ-> "<< meta::objects.at(i) <<"\n";
         meta::objects.at(i)->update();
+        //std::cout << i << " OBJ-> "<< meta::objects.at(i) <<"\n";
+        if (!meta::objects.at(i))
+        {
+            meta::objects.erase(meta::objects.begin()+i);
+            i--;
+            std::cout << "Removed\n";
+        }
         meta::objects.at(i)->draw();
     }
 }
@@ -73,11 +82,11 @@ void draw_100()
     SDL_Surface * image=get_surface("spaceb");
     int w=image->w;
     int h=image->h;
-    for(int i=0;i<(480/h)+3;i++)
+    for(int i=0; i<(480/h)+3; i++)
     {
-        for(int j=0;j<(640/w)+3;j++)
+        for(int j=0; j<(640/w)+3; j++)
         {
-            draw_tile(image, j*w-w, i*h-h, .125);
+            draw_tile(image, j*w-w, i*h-h, .4);
         }
     }
 }
@@ -87,11 +96,11 @@ void draw_80()
     SDL_Surface * image=get_surface("spacem");
     int w=image->w;
     int h=image->h;
-    for(int i=0;i<(480/h)+3;i++)
+    for(int i=0; i<(480/h)+3; i++)
     {
-        for(int j=0;j<(640/w)+3;j++)
+        for(int j=0; j<(640/w)+3; j++)
         {
-            draw_tile(image, j*w-w-4, i*h-h+34, .25);
+            draw_tile(image, j*w-w-4, i*h-h+34, .8);
         }
     }
 }
@@ -101,11 +110,11 @@ void draw_60()
     SDL_Surface * image=get_surface("spacef");
     int w=image->w;
     int h=image->h;
-    for(int i=0;i<(480/h)+3;i++)
+    for(int i=0; i<(480/h)+3; i++)
     {
-        for(int j=0;j<(640/w)+3;j++)
+        for(int j=0; j<(640/w)+3; j++)
         {
-            draw_tile(image, j*w-w+15, i*h-h+21, .5);
+            draw_tile(image, j*w-w+15, i*h-h+21, 1.6);
         }
     }
 }
@@ -130,20 +139,20 @@ int main ( int argc, char** argv )
     add_surface("metal",load_surface("metal_texture.bmp",0));
     SDL_Surface * metal=get_surface("metal");
 
-for(int i=-2;i < 20+2;i++)
-    meta::objects.push_back(new psrect_static(200*i, 200, 200, 200));
+    for(int i=-2; i < 20+2; i++)
+        meta::objects.push_back(new psrect_static(200*i, 200, 200, 200));
 //meta::objects.push_back(new psrect_static(320, 20, 320, 20));
 
 //meta::objects.push_back(new psrect_static(0, -400,1, 1000));
 //meta::objects.push_back(new psrect_static(1000, -400, 1, 1000));
 
-meta::objects.push_back(new rocket(2000,-100, 50,70/3));
+    meta::objects.push_back(new rocket(2000,-100, 50,70));
 
     //load_map("test.json");
 
     float32 timeStep = 1.0f / 30.0f;
-	int32 velocityIterations = 6;
-	int32 positionIterations = 2;
+    int32 velocityIterations = 6;
+    int32 positionIterations = 2;
 
     FPSmanager manager;
     SDL_initFramerate(&manager);
@@ -185,9 +194,9 @@ meta::objects.push_back(new rocket(2000,-100, 50,70/3));
 
         draw_background();
 
-		// Instruct the world to perform a single step of simulation.
-		// It is generally best to keep the time step and iterations fixed.
-		meta::world.Step(timeStep, velocityIterations, positionIterations);
+        // Instruct the world to perform a single step of simulation.
+        // It is generally best to keep the time step and iterations fixed.
+        meta::world.Step(timeStep, velocityIterations, positionIterations);
 
         update_objects();
 

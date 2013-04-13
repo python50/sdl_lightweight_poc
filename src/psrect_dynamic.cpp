@@ -36,7 +36,7 @@ psrect_dynamic::psrect_dynamic(int xx, int yy, float ww, float hh)
 
     create_body(w,h);
     //body->ApplyTorque(rand()%50);
-    life=600+rand()%300;
+    life=300;
 }
 
 void psrect_dynamic::create_body(float w, float h, float a)
@@ -57,7 +57,7 @@ void psrect_dynamic::create_body(float w, float h, float a)
 	FixtureDef.shape = &Box;
 
 	// Set the box density to be non-zero, so it will be dynamic.
-	FixtureDef.density = 1.0f;
+	FixtureDef.density = 4.0f;
 
 	// Override the default friction.
 	FixtureDef.friction = 0.1f;
@@ -66,6 +66,8 @@ void psrect_dynamic::create_body(float w, float h, float a)
 
 	// Add the shape to the body.
 	body->CreateFixture(&FixtureDef);
+	body->SetGravityScale(.5f / (rand()%5+1));
+	body->ApplyTorque(10*(-5+rand()%10));
 }
 
 void psrect_dynamic::check_move()
@@ -121,6 +123,15 @@ void psrect_dynamic::update()
     life--;
     if (!life)
     {
+        std:: cout << "This " << this << "life\n";
+        remove_object(this);
+        return;
+    }
+
+    std::cout << y <<"\n";
+    if (y>-550)
+    {
+       std:: cout << "This " << this << "die y\n";
         remove_object(this);
         return;
     }
@@ -128,7 +139,7 @@ void psrect_dynamic::update()
 
 void psrect_dynamic::draw()
 {
-    filledPolygonRGBA(meta::screen, vx, vy, size, 0xBB,0x55,0x00,0xFF);
+    filledPolygonRGBA(meta::screen, vx, vy, size, 0xFF,0x88,0x22,0xFF);
 
 }
 

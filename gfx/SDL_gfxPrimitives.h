@@ -239,6 +239,8 @@ extern "C" {
     SDL_GFXPRIMITIVES_SCOPE int stringRGBA(SDL_Surface * dst, Sint16 x, Sint16 y, const char *s, Uint8 r, Uint8 g, Uint8 b, Uint8 a);
 
     /* Ends C function definitions when using C++ */
+
+    int filledRectAlpha(SDL_Surface * dst, Sint16 x1, Sint16 y1, Sint16 x2, Sint16 y2, Uint32 color);
 #ifdef __cplusplus
 }
 #endif

@@ -181,7 +181,8 @@ bool remove_object(void * ptr)
         if ((void *)meta::objects.at(i)==ptr)
         {
             delete meta::objects.at(i);
-            meta::objects.erase(meta::objects.begin()+i);
+            meta::objects.at(i)=0;
+            //meta::objects.erase(meta::objects.begin()+i);
             return 1;
         }
     }
