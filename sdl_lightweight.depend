@@ -866,3 +866,893 @@
 	"begin_code.h"
 	"close_code.h"
 
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\base.cpp
+	"base.h"
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\base.h
+	<iostream>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\b2broadphase.cpp
+	<Box2D/Collision/b2BroadPhase.h>
+	<cstring>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\b2broadphase.h
+	<Box2D/Common/b2Settings.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/b2DynamicTree.h>
+	<algorithm>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\common\b2settings.h
+	<cassert>
+	<cmath>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\b2collision.h
+	<Box2D/Common/b2Math.h>
+	<climits>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\common\b2math.h
+	<Box2D/Common/b2Settings.h>
+	<cmath>
+	<cfloat>
+	<cstddef>
+	<limits>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\b2dynamictree.h
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Common/b2GrowableStack.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\common\b2growablestack.h
+	<Box2D/Common/b2Settings.h>
+	<cstring>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\b2collidecircle.cpp
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/Shapes/b2CircleShape.h>
+	<Box2D/Collision/Shapes/b2PolygonShape.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\shapes\b2circleshape.h
+	<Box2D/Collision/Shapes/b2Shape.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\shapes\b2shape.h
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/b2Collision.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\common\b2blockallocator.h
+	<Box2D/Common/b2Settings.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\shapes\b2polygonshape.h
+	<Box2D/Collision/Shapes/b2Shape.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\b2collideedge.cpp
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/Shapes/b2CircleShape.h>
+	<Box2D/Collision/Shapes/b2EdgeShape.h>
+	<Box2D/Collision/Shapes/b2PolygonShape.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\shapes\b2edgeshape.h
+	<Box2D/Collision/Shapes/b2Shape.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\b2collidepolygon.cpp
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/Shapes/b2PolygonShape.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\b2collision.cpp
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/b2Distance.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\b2distance.h
+	<Box2D/Common/b2Math.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\b2distance.cpp
+	<Box2D/Collision/b2Distance.h>
+	<Box2D/Collision/Shapes/b2CircleShape.h>
+	<Box2D/Collision/Shapes/b2EdgeShape.h>
+	<Box2D/Collision/Shapes/b2ChainShape.h>
+	<Box2D/Collision/Shapes/b2PolygonShape.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\shapes\b2chainshape.h
+	<Box2D/Collision/Shapes/b2Shape.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\b2dynamictree.cpp
+	<Box2D/Collision/b2DynamicTree.h>
+	<cstring>
+	<cfloat>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\b2timeofimpact.cpp
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/b2Distance.h>
+	<Box2D/Collision/b2TimeOfImpact.h>
+	<Box2D/Collision/Shapes/b2CircleShape.h>
+	<Box2D/Collision/Shapes/b2PolygonShape.h>
+	<cstdio>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\b2timeofimpact.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/b2Distance.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\shapes\b2chainshape.cpp
+	<Box2D/Collision/Shapes/b2ChainShape.h>
+	<Box2D/Collision/Shapes/b2EdgeShape.h>
+	<new>
+	<cstring>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\shapes\b2circleshape.cpp
+	<Box2D/Collision/Shapes/b2CircleShape.h>
+	<new>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\shapes\b2edgeshape.cpp
+	<Box2D/Collision/Shapes/b2EdgeShape.h>
+	<new>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\collision\shapes\b2polygonshape.cpp
+	<Box2D/Collision/Shapes/b2PolygonShape.h>
+	<new>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\common\b2blockallocator.cpp
+	<Box2D/Common/b2BlockAllocator.h>
+	<cstdlib>
+	<climits>
+	<cstring>
+	<memory>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\common\b2draw.cpp
+	<Box2D/Common/b2Draw.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\common\b2draw.h
+	<Box2D/Common/b2Math.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\common\b2math.cpp
+	<Box2D/Common/b2Math.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\common\b2settings.cpp
+	<Box2D/Common/b2Settings.h>
+	<cstdlib>
+	<cstdio>
+	<cstdarg>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\common\b2stackallocator.cpp
+	<Box2D/Common/b2StackAllocator.h>
+	<Box2D/Common/b2Math.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\common\b2stackallocator.h
+	<Box2D/Common/b2Settings.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\common\b2timer.cpp
+	<Box2D/Common/b2Timer.h>
+	<windows.h>
+	<sys/time.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\common\b2timer.h
+	<Box2D/Common/b2Settings.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\b2body.cpp
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Dynamics/b2World.h>
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\b2body.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/Shapes/b2Shape.h>
+	<memory>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\b2fixture.h
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/Shapes/b2Shape.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\b2world.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Common/b2StackAllocator.h>
+	<Box2D/Dynamics/b2ContactManager.h>
+	<Box2D/Dynamics/b2WorldCallbacks.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\b2contactmanager.h
+	<Box2D/Collision/b2BroadPhase.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\b2worldcallbacks.h
+	<Box2D/Common/b2Settings.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\b2timestep.h
+	<Box2D/Common/b2Math.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2contact.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/Shapes/b2Shape.h>
+	<Box2D/Dynamics/b2Fixture.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2joint.h
+	<Box2D/Common/b2Math.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\b2contactmanager.cpp
+	<Box2D/Dynamics/b2ContactManager.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Dynamics/b2WorldCallbacks.h>
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\b2fixture.cpp
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+	<Box2D/Dynamics/b2World.h>
+	<Box2D/Collision/Shapes/b2CircleShape.h>
+	<Box2D/Collision/Shapes/b2EdgeShape.h>
+	<Box2D/Collision/Shapes/b2PolygonShape.h>
+	<Box2D/Collision/Shapes/b2ChainShape.h>
+	<Box2D/Collision/b2BroadPhase.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Common/b2BlockAllocator.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\b2island.cpp
+	<Box2D/Collision/b2Distance.h>
+	<Box2D/Dynamics/b2Island.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Dynamics/b2World.h>
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+	<Box2D/Dynamics/Contacts/b2ContactSolver.h>
+	<Box2D/Dynamics/Joints/b2Joint.h>
+	<Box2D/Common/b2StackAllocator.h>
+	<Box2D/Common/b2Timer.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\b2island.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2contactsolver.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\b2world.cpp
+	<Box2D/Dynamics/b2World.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Dynamics/b2Island.h>
+	<Box2D/Dynamics/Joints/b2PulleyJoint.h>
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+	<Box2D/Dynamics/Contacts/b2ContactSolver.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/b2BroadPhase.h>
+	<Box2D/Collision/Shapes/b2CircleShape.h>
+	<Box2D/Collision/Shapes/b2EdgeShape.h>
+	<Box2D/Collision/Shapes/b2ChainShape.h>
+	<Box2D/Collision/Shapes/b2PolygonShape.h>
+	<Box2D/Collision/b2TimeOfImpact.h>
+	<Box2D/Common/b2Draw.h>
+	<Box2D/Common/b2Timer.h>
+	<new>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2pulleyjoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\b2worldcallbacks.cpp
+	<Box2D/Dynamics/b2WorldCallbacks.h>
+	<Box2D/Dynamics/b2Fixture.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2chainandcirclecontact.cpp
+	<Box2D/Dynamics/Contacts/b2ChainAndCircleContact.h>
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Collision/Shapes/b2ChainShape.h>
+	<Box2D/Collision/Shapes/b2EdgeShape.h>
+	<new>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2chainandcirclecontact.h
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2chainandpolygoncontact.cpp
+	<Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.h>
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Collision/Shapes/b2ChainShape.h>
+	<Box2D/Collision/Shapes/b2EdgeShape.h>
+	<new>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2chainandpolygoncontact.h
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2circlecontact.cpp
+	<Box2D/Dynamics/Contacts/b2CircleContact.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Dynamics/b2WorldCallbacks.h>
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Collision/b2TimeOfImpact.h>
+	<new>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2circlecontact.h
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2contact.cpp
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+	<Box2D/Dynamics/Contacts/b2CircleContact.h>
+	<Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h>
+	<Box2D/Dynamics/Contacts/b2PolygonContact.h>
+	<Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.h>
+	<Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.h>
+	<Box2D/Dynamics/Contacts/b2ChainAndCircleContact.h>
+	<Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.h>
+	<Box2D/Dynamics/Contacts/b2ContactSolver.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/b2TimeOfImpact.h>
+	<Box2D/Collision/Shapes/b2Shape.h>
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Dynamics/b2World.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2polygonandcirclecontact.h
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2polygoncontact.h
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2edgeandcirclecontact.h
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2edgeandpolygoncontact.h
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2contactsolver.cpp
+	<Box2D/Dynamics/Contacts/b2ContactSolver.h>
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Dynamics/b2World.h>
+	<Box2D/Common/b2StackAllocator.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2edgeandcirclecontact.cpp
+	<Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.h>
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<new>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2edgeandpolygoncontact.cpp
+	<Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.h>
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<new>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2polygonandcirclecontact.cpp
+	<Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h>
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<new>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\contacts\b2polygoncontact.cpp
+	<Box2D/Dynamics/Contacts/b2PolygonContact.h>
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Collision/b2TimeOfImpact.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Dynamics/b2WorldCallbacks.h>
+	<new>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2distancejoint.cpp
+	<Box2D/Dynamics/Joints/b2DistanceJoint.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2distancejoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2frictionjoint.cpp
+	<Box2D/Dynamics/Joints/b2FrictionJoint.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2frictionjoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2gearjoint.cpp
+	<Box2D/Dynamics/Joints/b2GearJoint.h>
+	<Box2D/Dynamics/Joints/b2RevoluteJoint.h>
+	<Box2D/Dynamics/Joints/b2PrismaticJoint.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2gearjoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2revolutejoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2prismaticjoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2joint.cpp
+	<Box2D/Dynamics/Joints/b2Joint.h>
+	<Box2D/Dynamics/Joints/b2DistanceJoint.h>
+	<Box2D/Dynamics/Joints/b2WheelJoint.h>
+	<Box2D/Dynamics/Joints/b2MouseJoint.h>
+	<Box2D/Dynamics/Joints/b2RevoluteJoint.h>
+	<Box2D/Dynamics/Joints/b2PrismaticJoint.h>
+	<Box2D/Dynamics/Joints/b2PulleyJoint.h>
+	<Box2D/Dynamics/Joints/b2GearJoint.h>
+	<Box2D/Dynamics/Joints/b2WeldJoint.h>
+	<Box2D/Dynamics/Joints/b2FrictionJoint.h>
+	<Box2D/Dynamics/Joints/b2RopeJoint.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2World.h>
+	<Box2D/Common/b2BlockAllocator.h>
+	<new>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2wheeljoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2mousejoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2weldjoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2ropejoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2mousejoint.cpp
+	<Box2D/Dynamics/Joints/b2MouseJoint.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2prismaticjoint.cpp
+	<Box2D/Dynamics/Joints/b2PrismaticJoint.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2pulleyjoint.cpp
+	<Box2D/Dynamics/Joints/b2PulleyJoint.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2revolutejoint.cpp
+	<Box2D/Dynamics/Joints/b2RevoluteJoint.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2ropejoint.cpp
+	<Box2D/Dynamics/Joints/b2RopeJoint.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2weldjoint.cpp
+	<Box2D/Dynamics/Joints/b2WeldJoint.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\dynamics\joints\b2wheeljoint.cpp
+	<Box2D/Dynamics/Joints/b2WheelJoint.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\rope\b2rope.cpp
+	<Box2D/Rope/b2Rope.h>
+	<Box2D/Common/b2Draw.h>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\rope\b2rope.h
+	<Box2D/Common/b2Math.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_gfx\sdl_imagefilter.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"SDL_imageFilter.h"
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_gfx\sdl_imagefilter.h
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\json\jsoncpp.cpp
+	<json.h>
+	<json/assertions.h>
+	<json/reader.h>
+	<json/value.h>
+	"json_tool.h"
+	<utility>
+	<cstdio>
+	<cassert>
+	<cstring>
+	<stdexcept>
+	<stdlib.h>
+	<assert.h>
+	<json/assertions.h>
+	<json/value.h>
+	<json/writer.h>
+	"json_batchallocator.h"
+	<math.h>
+	<sstream>
+	<utility>
+	<stdexcept>
+	<cstring>
+	<cassert>
+	<cpptl/conststring.h>
+	<cstddef>
+	"json_internalarray.inl"
+	"json_internalmap.inl"
+	"json_valueiterator.inl"
+	<json/writer.h>
+	"json_tool.h"
+	<utility>
+	<assert.h>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<iomanip>
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\json\json.h
+	<cpptl/config.h>
+	"config.h"
+	"forwards.h"
+	"forwards.h"
+	<string>
+	<vector>
+	<map>
+	<cpptl/smallmap.h>
+	<cpptl/forwards.h>
+	"features.h"
+	"value.h"
+	<deque>
+	<stack>
+	<string>
+	"value.h"
+	<vector>
+	<string>
+	<stdlib.h>
+	<json/config.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_gfx\sdl_framerate.c
+	"SDL_framerate.h"
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_gfx\sdl_framerate.h
+	"SDL.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_loadso.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1326114587 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_config.h
+	"SDL_platform.h"
+	"SDL_config_dreamcast.h"
+	"SDL_config_macos.h"
+	"SDL_config_macosx.h"
+	"SDL_config_symbian.h"
+	"SDL_config_win32.h"
+	"SDL_config_os2.h"
+	"SDL_config_minimal.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_platform.h
+
+1326114594 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_config_win32.h
+	"SDL_platform.h"
+
+1326114600 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\begin_code.h
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\close_code.h
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_cdrom.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_active.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_keysym.h
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_gfx\sdl_gfxblitfunc.c
+	"SDL_gfxBlitFunc.h"
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_gfx\sdl_gfxblitfunc.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL.h>
+	<SDL_video.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_gfx\sdl_gfxprimitives.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	"SDL_gfxPrimitives.h"
+	"SDL_rotozoom.h"
+	"SDL_gfxPrimitives_font.h"
+	"SDL_gfxBlitFunc.h"
+	<emmintrin.h>
+	<armintr.h>
+
+1365898400 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_gfx\sdl_gfxprimitives.h
+	<math.h>
+	"SDL.h"
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_gfx\sdl_rotozoom.h
+	<math.h>
+	"SDL.h"
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_gfx\sdl_gfxprimitives_font.h
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_gfx\sdl_rotozoom.c
+	<windows.h>
+	<stdlib.h>
+	<string.h>
+	"SDL_rotozoom.h"
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\game_poly.cpp
+	"game_poly.h"
+	"meta.h"
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\game_poly.h
+	<vector>
+	"SDL.h"
+	"base.h"
+	"SDL_gfxPrimitives.h"
+
+1365899821 c:\users\jason\documents\github\sdl_lightweight_poc\src\meta.h
+	"Box2D/Box2D.h"
+	"SDL.h"
+	"base.h"
+	<vector>
+	<utility>
+
+1365898008 c:\users\jason\documents\github\sdl_lightweight_poc\src\box2d\box2d.h
+	<Box2D/Common/b2Settings.h>
+	<Box2D/Common/b2Draw.h>
+	<Box2D/Common/b2Timer.h>
+	<Box2D/Collision/Shapes/b2CircleShape.h>
+	<Box2D/Collision/Shapes/b2EdgeShape.h>
+	<Box2D/Collision/Shapes/b2ChainShape.h>
+	<Box2D/Collision/Shapes/b2PolygonShape.h>
+	<Box2D/Collision/b2BroadPhase.h>
+	<Box2D/Collision/b2Distance.h>
+	<Box2D/Collision/b2DynamicTree.h>
+	<Box2D/Collision/b2TimeOfImpact.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Dynamics/b2WorldCallbacks.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+	<Box2D/Dynamics/b2World.h>
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+	<Box2D/Dynamics/Joints/b2DistanceJoint.h>
+	<Box2D/Dynamics/Joints/b2FrictionJoint.h>
+	<Box2D/Dynamics/Joints/b2GearJoint.h>
+	<Box2D/Dynamics/Joints/b2WheelJoint.h>
+	<Box2D/Dynamics/Joints/b2MouseJoint.h>
+	<Box2D/Dynamics/Joints/b2PrismaticJoint.h>
+	<Box2D/Dynamics/Joints/b2PulleyJoint.h>
+	<Box2D/Dynamics/Joints/b2RevoluteJoint.h>
+	<Box2D/Dynamics/Joints/b2RopeJoint.h>
+	<Box2D/Dynamics/Joints/b2WeldJoint.h>
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\map_parser.cpp
+	"map_parser.h"
+	<vector>
+	"game_poly.h"
+
+1365898009 c:\users\jason\documents\github\sdl_lightweight_poc\src\map_parser.h
+	<iostream>
+	<fstream>
+	"meta.h"
+	"json.h"
+
+1365903005 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\psrect_dynamic.cpp
+	"psrect_dynamic.h"
+	<vector>
+	"meta.h"
+
+1365899838 c:\users\jason\documents\github\sdl_lightweight_poc\src\psrect_dynamic.h
+	"base.h"
+	"SDL.h"
+	"SDL_gfxPrimitives.h"
+	"Box2D/Box2D.h"
+
+1365903173 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\rocket.cpp
+	"rocket.h"
+	"psrect_dynamic.h"
+	<vector>
+	"meta.h"
+	"SDL_gfxPrimitives.h"
+
+1365899832 c:\users\jason\documents\github\sdl_lightweight_poc\src\rocket.h
+	"base.h"
+	"SDL.h"
+	"SDL_gfxPrimitives.h"
+	"Box2D/Box2D.h"
+
+1365901961 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\meta.cpp
+	"meta.h"
+	"Box2D/Box2D.h"
+	"SDL_image.h"
+
+1327132292 c:\users\jason\documents\github\sdl_lightweight_poc\src\sdl_include\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1365898009 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\psrect_static.cpp
+	"psrect_static.h"
+	<vector>
+	"meta.h"
+
+1365899860 c:\users\jason\documents\github\sdl_lightweight_poc\src\psrect_static.h
+	"base.h"
+	"SDL.h"
+	"SDL_gfxPrimitives.h"
+	"Box2D/Box2D.h"
+
+1365903243 source:c:\users\jason\documents\github\sdl_lightweight_poc\src\main.cpp
+	<cstdlib>
+	<SDL/SDL.h>
+	<SDL.h>
+	"SDL_framerate.h"
+	"SDL_gfxPrimitives.h"
+	"meta.h"
+	"game_poly.h"
+	"map_parser.h"
+	"Box2D/Box2D.h"
+	"stdio.h"
+	"psrect_static.h"
+	"psrect_dynamic.h"
+	"rocket.h"
+	"time.h"
+

@@ -123,15 +123,12 @@ void psrect_dynamic::update()
     life--;
     if (!life)
     {
-        std:: cout << "This " << this << "life\n";
         remove_object(this);
         return;
     }
-
-    std::cout << y <<"\n";
+;
     if (y>-550)
     {
-       std:: cout << "This " << this << "die y\n";
         remove_object(this);
         return;
     }

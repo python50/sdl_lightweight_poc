@@ -1,0 +1,1 @@
+The ./lib and ./sdl_include directories only exist in order to ease building on Windows. If your on a linux system you must instead install your ditro's developmental packages for libSDL1.2 and libSDL_image1.2 and use the system header files.

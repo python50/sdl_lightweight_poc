@@ -172,7 +172,7 @@ void rocket::update()
     Uint8 *keystate = SDL_GetKeyState(NULL);
 
 
-    const float vol_up_scale=2.75;
+    const float vol_up_scale=2.75+1;
     const float vol_up=400 * vol_up_scale;
 
     if ( keystate[SDLK_UP] || keystate[SDLK_w] )
@@ -188,8 +188,8 @@ void rocket::update()
         b2Vec2 velocity = body->GetLinearVelocity();
         float32 speed = velocity.Normalize(); // Normalize returns the length, and set's the length to 1.
 
-        if(speed>7.4)
-            body->SetLinearVelocity(.99 * speed * velocity);
+       //if(speed>7.4)
+       //     body->SetLinearVelocity(.99 * speed * velocity);
     }
 
     const float vol_side_scale=1;
