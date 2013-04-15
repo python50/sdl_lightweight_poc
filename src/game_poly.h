@@ -5,17 +5,18 @@
 #include "base.h"
 #include "SDL_gfxPrimitives.h"
 
+#include "Box2D.h"
 
-//a STATIC polygon, not moving
+//a BOX2Dish polygon, not moving
 class game_poly : public base
 {
 public:
     int x;
     int y;
-    Sint16 * origvx;
-    Sint16 * origvy;
     Sint16 * vx;
     Sint16 * vy;
+    int origx;
+    int origy;
     int size;
     bool error;
     SDL_Surface * texture;
@@ -25,13 +26,13 @@ public:
     void update();
     void draw();
 
+
     virtual ~game_poly();
 protected:
 private:
     void update_v();
-    void check_move();
-    //old x,y : old view x,view y
-    int ox,oy,ovx,ovy;
+
+    b2Body * body;
 };
 
 #endif // GAME_POLY_H

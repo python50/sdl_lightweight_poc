@@ -1,6 +1,7 @@
 #include "meta.h"
 #include "Box2D/Box2D.h"
 #include "SDL_image.h"
+#include "Box2D/Common/b2Draw.h"
 
 namespace meta
 {
@@ -19,6 +20,8 @@ char background_red=0;
 char background_green=0;
 char background_blue=0;
 }
+
+
 
 SDL_Surface * load_surface(std::string filename, char mode)
 {

@@ -41,12 +41,16 @@ bool initalize()
     meta::screen_width=640;
     meta::screen_height=480;
     // create a new window
-    meta::screen  = SDL_SetVideoMode(640, 480, 16, SDL_HWSURFACE | SDL_DOUBLEBUF | SDL_FULLSCREEN);
+    meta::screen  = SDL_SetVideoMode(640, 480, 16, SDL_HWSURFACE | SDL_DOUBLEBUF);
     if ( !meta::screen )
     {
         printf("Unable to set 640x480 video: %s\n", SDL_GetError());
         return 1;
     }
+
+    //to draw -> meta::world.DrawDebugData()
+    meta::world.SetDebugDraw(new b2Draw());
+
     return 1;
 }
 
@@ -137,7 +141,6 @@ void draw_background()
 int main ( int argc, char** argv )
 {
 	std::cout << "Starting\n";
-	puts("????\r\n");
     initalize();
 
     //TODO add resource load error handling
@@ -205,6 +208,7 @@ int main ( int argc, char** argv )
         meta::world.Step(timeStep, velocityIterations, positionIterations);
 
         update_objects();
+        meta::world.DrawDebugData();
 
         // DRAWING ENDS HERE
 

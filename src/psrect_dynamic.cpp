@@ -52,6 +52,7 @@ void psrect_dynamic::create_body(float w, float h, float a)
 	// The extents are the half-widths of the box.
 	Box.SetAsBox(w/10, h/10, b2Vec2(0,0), a);
 
+
 	// Define the dynamic body fixture.
 	b2FixtureDef FixtureDef;
 	FixtureDef.shape = &Box;

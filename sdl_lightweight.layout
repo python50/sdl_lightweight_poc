@@ -1,49 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="WindowsDebug" />
-	<File name="src\rocket.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="127" topLine="0" />
-		</Cursor>
+	<ActiveTarget name="LinuxDebug" />
+	<File name="src/Box2D/Common/b2Draw.cpp" open="1" top="1" tabpos="5">
+		<Cursor position="988" topLine="0" />
 	</File>
-	<File name="src\meta.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="605" topLine="8" />
-		</Cursor>
+	<File name="src/Box2D/Common/b2Draw.h" open="1" top="0" tabpos="4">
+		<Cursor position="2632" topLine="14" />
 	</File>
-	<File name="src\meta.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="76" topLine="0" />
-		</Cursor>
+	<File name="src/Box2D/Dynamics/b2Body.h" open="0" top="0" tabpos="0">
+		<Cursor position="14837" topLine="334" />
 	</File>
-	<File name="src\psrect_static.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="141" topLine="0" />
-		</Cursor>
+	<File name="src/Box2D/Dynamics/b2World.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="23359" topLine="1019" />
 	</File>
-	<File name="src\psrect_dynamic.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="143" topLine="0" />
-		</Cursor>
+	<File name="src/Box2D/Dynamics/b2World.h" open="1" top="0" tabpos="8">
+		<Cursor position="4486" topLine="84" />
 	</File>
-	<File name="src\Box2D\Common\b2Draw.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="488" topLine="19" />
-		</Cursor>
+	<File name="src/game_poly.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="1561" topLine="0" />
 	</File>
-	<File name="src\rocket.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3635" topLine="156" />
-		</Cursor>
+	<File name="src/game_poly.h" open="1" top="0" tabpos="1">
+		<Cursor position="93" topLine="0" />
 	</File>
-	<File name="src\main.cpp" open="1" top="1" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="761" topLine="30" />
-		</Cursor>
+	<File name="src/main.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="967" topLine="26" />
 	</File>
-	<File name="src\psrect_dynamic.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2614" topLine="111" />
-		</Cursor>
+	<File name="src/meta.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="466" topLine="0" />
+	</File>
+	<File name="src/meta.h" open="0" top="0" tabpos="1">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src/psrect_dynamic.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="527" topLine="0" />
+	</File>
+	<File name="src/psrect_dynamic.h" open="0" top="0" tabpos="3">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src/psrect_static.h" open="0" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src/rocket.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src/rocket.h" open="0" top="0" tabpos="2">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src/sdl_gfx/SDL_gfxPrimitives.c" open="0" top="0" tabpos="9">
+		<Cursor position="0" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>
